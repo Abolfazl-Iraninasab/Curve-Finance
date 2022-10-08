@@ -5,12 +5,12 @@ const swap = artifacts.require("swap")
 
 contract("token swap", (accounts) => {
 
-    const TOKEN_IN = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48       // USDC
+    const TOKEN_IN = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"       // USDC
     const TOKEN_IN_INDEX = 1
-    const TOKEN_OUT = 0xdAC17F958D2ee523a2206206994597C13D831ec7      // USDT
+    const TOKEN_OUT = "0xdAC17F958D2ee523a2206206994597C13D831ec7"      // USDT
     const TOKEN_OUT_INDEX = 2
-    const TOKEN_IN_AMOUNT = 100000000                                 // USDC decimals : 6 
-    const WHALE = 0xda9ce944a37d218c3302f6b82a094844c6eceb17          // a USDC whale 
+    const TOKEN_IN_AMOUNT = 100000000                                   // USDC decimals : 6 
+    const WHALE = "0xda9ce944a37d218c3302f6b82a094844c6eceb17"          // a USDC whale 
 
     let swapContract
     let tokenIn

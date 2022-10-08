@@ -5,10 +5,10 @@ const testLiquidityContract = artifacts.require("liquidity")
 
 contract("testLiquidityContract", (accounts) => {
 
-    const TOKEN = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48          // USDC  
+    const TOKEN = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"          // USDC  
     const TOKEN_INDEX = 1
     const TOKEN_AMOUNT = 100000000
-    const WHALE = 0xda9ce944a37d218c3302f6b82a094844c6eceb17          // a USDC whale
+    const WHALE = "0xda9ce944a37d218c3302f6b82a094844c6eceb17"          // a USDC whale
 
     let liquidityContract
     let token
